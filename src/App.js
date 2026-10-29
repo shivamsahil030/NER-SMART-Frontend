@@ -1,22 +1,22 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
-import { AppProvider, useApp } from "@/context/AppContext";
-import { DriverLayout } from "@/components/DriverLayout";
-import { Toaster } from "@/components/ui/sonner";
+import { AppProvider, useApp } from "./context/AppContext";
+import { DriverLayout } from "./components/DriverLayout";
+import { Toaster } from "./components/ui/sonner";
 
-import Landing from "@/pages/Landing";
-import Login from "@/pages/Login";
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 
-import UserDashboard from "@/pages/user/UserDashboard";
-import PlanRoute from "@/pages/user/PlanRoute";
-import MyTrips from "@/pages/user/MyTrips";
-import LiveTracking from "@/pages/user/LiveTracking";
-import Alerts from "@/pages/user/Alerts";
-import FieldReport from "@/pages/user/FieldReport";
-import Profile from "@/pages/user/Profile";
-import MapView from "@/pages/user/MapView";
-import EmergencySOS from "@/pages/user/EmergencySOS";
+import UserDashboard from "./pages/user/UserDashboard";
+import PlanRoute from "./pages/user/PlanRoute";
+import MyTrips from "./pages/user/MyTrips";
+import LiveTracking from "./pages/user/LiveTracking";
+import Alerts from "./pages/user/Alerts";
+import FieldReport from "./pages/user/FieldReport";
+import Profile from "./pages/user/Profile";
+import MapView from "./pages/user/MapView";
+import EmergencySOS from "./pages/user/EmergencySOS";
 
 function RequireAuth() {
   const { auth } = useApp();
