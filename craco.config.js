@@ -84,7 +84,12 @@ let webpackConfig = {
       '@': path.resolve(__dirname, 'src'),
     },
     configure: (webpackConfig) => {
-
+      
+webpackConfig.resolve = webpackConfig.resolve || {};
+webpackConfig.resolve.alias = {
+  ...webpackConfig.resolve.alias,
+  "@": path.resolve(__dirname, "src"),
+};
       // Add ignored patterns to reduce watched directories
         webpackConfig.watchOptions = {
           ...webpackConfig.watchOptions,
