@@ -1,5 +1,5 @@
 import React from "react";
-import "@/App.css";
+import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { AppProvider, useApp } from "@/context/AppContext";
 import { DriverLayout } from "@/components/DriverLayout";
